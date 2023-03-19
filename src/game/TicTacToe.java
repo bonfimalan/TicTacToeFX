@@ -5,9 +5,9 @@ public class TicTacToe {
     private char currentChar;
     private boolean isPlayerOne;
     
-    private static final char BOARD_SIZE = 3;
-    private static final char PLAYER_ONE = 'x';
-    private static final char PLAYER_TWO = 'o';
+    public static final char BOARD_SIZE = 3;
+    public static final char PLAYER_ONE = 'x';
+    public static final char PLAYER_TWO = 'o';
 
     public TicTacToe() {
         this.board = new char[BOARD_SIZE][BOARD_SIZE];
@@ -17,6 +17,10 @@ public class TicTacToe {
 
     public boolean isPlayerOne() {
         return this.isPlayerOne;
+    }
+
+    public boolean isPlayerOneAfterRound() {
+        return !this.isPlayerOne;
     }
 
     public boolean play(int line, int column) throws CellFiledException {

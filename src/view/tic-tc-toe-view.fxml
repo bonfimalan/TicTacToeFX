@@ -29,13 +29,13 @@
          <children>
             <Label fx:id="playerOneLabel" text="Player one" textFill="LIME">
                <font>
-                  <Font size="18.0" />
+                  <Font size="24.0" />
                </font>
             </Label>
             <Region HBox.hgrow="ALWAYS" />
             <Label fx:id="playerTwoLabel" text="Player two" textFill="BLUE">
                <font>
-                  <Font size="18.0" />
+                  <Font size="24.0" />
                </font>
             </Label>
          </children>
