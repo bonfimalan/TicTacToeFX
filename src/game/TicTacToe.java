@@ -19,6 +19,10 @@ public class TicTacToe {
         return this.isPlayerOne;
     }
 
+    public boolean isPlayerOneAfterRound() {
+        return !this.isPlayerOne;
+    }
+
     public boolean play(int line, int column) throws CellFiledException {
         if(board[line][column] != ' ') {
             throw new CellFiledException();
